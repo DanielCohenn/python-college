@@ -5,8 +5,10 @@ class Poll:
         self.vote_option_list = vote_option_list
         # generating a dictionary with the options to vote (keys) and reset the number of votes to zero
         count_list = [0 for n in range(len(self.vote_option_list))]
-        self.votes_dict = {k: v for k, v in zip(self.vote_option_list, count_list)}
-        print(f'New poll question: {self.poll_q}, vote options: {vote_option_list}')
+        self.votes_dict = {k: v for k, v in zip(
+            self.vote_option_list, count_list)}
+        print(
+            f'New poll question: {self.poll_q}, vote options: {vote_option_list}')
 
     def vote(self, vote):
         # updating our vote dictionary according to the inputted votes
