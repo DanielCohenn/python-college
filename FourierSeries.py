@@ -40,8 +40,9 @@ A1 = np.zeros(20)
 B1 = np.zeros(20)
 for k in range(20):
     A1[k] = np.sum(f * np.cos(np.pi*(k+1)*x_line/L)) * dx
-    B1[k] = np.sum(f * np.sin(np.pi)*(k+1)*x_line/L) *dx
-    fFs1 = fFs1 + A1[k]*np.cos((k+1)*np.pi*x_line/L) + B1[k]*np.sin((k+1)*np.pi*x_line/L)
+    B1[k] = np.sum(f * np.sin(np.pi)*(k+1)*x_line/L) * dx
+    fFs1 = fFs1 + A1[k]*np.cos((k+1)*np.pi*x_line/L) + \
+        B1[k]*np.sin((k+1)*np.pi*x_line/L)
     axs[0].set_title('Fourier series for hat function:')
     axs[0].plot(x_line, fFs1, '-')
 
@@ -51,8 +52,9 @@ A2 = np.zeros(20)
 B2 = np.zeros(20)
 for k in range(20):
     A2[k] = np.sum(f2 * np.cos(np.pi*(k+1)*x_line/L)) * dx
-    B2[k] = np.sum(f2 * np.sin(np.pi)*(k+1)*x_line/L) *dx
-    fFs2 = fFs2 + A2[k]*np.cos((k+1)*np.pi*x_line/L) + B2[k]*np.sin((k+1)*np.pi*x_line/L)
+    B2[k] = np.sum(f2 * np.sin(np.pi)*(k+1)*x_line/L) * dx
+    fFs2 = fFs2 + A2[k]*np.cos((k+1)*np.pi*x_line/L) + \
+        B2[k]*np.sin((k+1)*np.pi*x_line/L)
     axs[1].set_title('Fourier series for step function:')
     axs[1].plot(x_line, fFs2, '-')
 
