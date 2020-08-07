@@ -14,4 +14,4 @@ libraries used: numpy, matplotlib.pyplot, matplotlib.cm
 * third section - computing our fourier series for both the hat and step functions.
 
 
-# second project: "dealing_cards_from_deck"
+## second project: "dealing_cards_from_deck"
