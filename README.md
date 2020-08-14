@@ -15,7 +15,6 @@ libraries used: numpy, matplotlib.pyplot, matplotlib.cm
 
 * output:
 
-![Untitled](https://user-images.githubusercontent.com/69191953/90231456-dd862880-de23-11ea-9e75-bae1be2c9f77.png)
-
+![11111](https://user-images.githubusercontent.com/69191953/90231889-7f0d7a00-de24-11ea-9390-a2651e645703.png)
 
 ## second project: "dealing_cards_from_deck"
