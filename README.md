@@ -12,6 +12,8 @@ libraries used: numpy, matplotlib.pyplot, matplotlib.cm
 * first section - defining our time domain and its bounderis.
 * second section - defining our hat and step function as explained above.
 * third section - computing our fourier series for both the hat and rectangular functions.
+
+output: 
 ![Untitled](https://user-images.githubusercontent.com/69191953/90231456-dd862880-de23-11ea-9e75-bae1be2c9f77.png)
 
 
