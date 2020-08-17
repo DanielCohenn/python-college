@@ -24,9 +24,9 @@ The progrem was writen with two classes, Card and Deck, our Deck class generate 
 libraries used: random
 
 ## Third project: "ploting_data_from_xl"
-With this project were working with an xl file contains data in 5 different columns,
-we spliting this data two arrays containing one column of data each.
-we plot as a scatter graph our values of 'X' and 'Y' when each couple of (X, Y) gets a corresponding value of 'L'
+With this project we are working with an xl file contains data in 5 different columns,
+we are spliting this data into 5 different arrays containing one column of data each.
+We plot as a scatter graph our values of 'X' and 'Y' when each couple of (X, Y) gets a corresponding value of 'L'
 that value dictates the color of each dot on the scatter graph.
 
 libraries used: numpy, matplotlib.pyplot, pandas
