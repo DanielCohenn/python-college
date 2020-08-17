@@ -10,8 +10,8 @@ def import_data(file):
     arr1 --> L ; arr2 --> NewX ; arr3 --> NewY
     """
     arr1 = np.array(file[['L']])
-    arr2= np.array([file['NewX']])
-    arr3 = np.array([file['NewY']])
+    arr2 = np.array(file['NewX'])
+    arr3 = np.array(file['NewY'])
     return arr1, arr2, arr3
 
 
@@ -43,12 +43,12 @@ def plot_my_data(arr1: list, arr2: list, arr3: list):
     for i, val in enumerate(arr1):
         # i represents the index in arr1 and val is the value corresponding to i
         if val == 0:
-            plt.scatter(arr2[0][i], arr3[0][i], color=color_dict[0], edgecolors='black')
+            plt.scatter(arr2[i], arr3[i], color=color_dict[0], edgecolors='black')
 
         elif val == 1:
-            plt.scatter(arr2[0][i], arr3[0][i], color=color_dict[1], edgecolors='black')
+            plt.scatter(arr2[i], arr3[i], color=color_dict[1], edgecolors='black')
         else:
-            plt.scatter(arr2[0][i], arr3[0][i], color=color_dict[2], edgecolors='black')
+            plt.scatter(arr2[i], arr3[i], color=color_dict[2], edgecolors='black')
     plt.title('New X and New Y scatter')
     plt.xlabel('New X')
     plt.ylabel('New Y')
