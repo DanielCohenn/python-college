@@ -23,9 +23,9 @@ f[2*n_quarter:3*n_quarter] = np.ones(n_quarter) - (4/n)*np.arange(0, n_quarter)
 fig, axs = plt.subplots(2)
 axs[0].plot(x_line, f, '-', color='k', LineWidth=1)
 
-# define step function
+# define rectangular function function
 f2 = np.zeros_like(x_line)
-f2[n_quarter:3*n_quarter] = 1
+f2[n_quarter: 3*n_quarter] = 1
 axs[1].plot(x_line, f2, '-', color='b', LineWidth=1)
 
 # compute fourier series
@@ -55,7 +55,7 @@ for k in range(20):
     B2[k] = np.sum(f2 * np.sin(np.pi)*(k+1)*x_line/L) * dx
     fFs2 = fFs2 + A2[k]*np.cos((k+1)*np.pi*x_line/L) + \
         B2[k]*np.sin((k+1)*np.pi*x_line/L)
-    axs[1].set_title('Fourier series for step function:')
+    axs[1].set_title('Fourier series for rectangular function:')
     axs[1].plot(x_line, fFs2, '-')
 
 plt.show()
